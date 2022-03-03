@@ -1,3 +1,4 @@
+package HelloWorld;
 import org.apache.camel.builder.RouteBuilder;
 
 public class HelloWorldRoute extends RouteBuilder {

@@ -1,0 +1,5 @@
+#ignore files when tracking
+./idea
+input_box
+output_box
+target
