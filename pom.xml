@@ -19,6 +19,17 @@
             <artifactId>camel-rabbitmq</artifactId>
             <version>3.17.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jdbc</artifactId>
+            <version>3.16.0</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.29</version>
+        </dependency>
+
     </dependencies>
 
     <properties>
