@@ -4,7 +4,9 @@ import org.apache.camel.*;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
 
-
+/**
+ * @author shem.mwangi
+ */
 public class ProducerConsumer {
 
     public static void main(String[] args) throws Exception {

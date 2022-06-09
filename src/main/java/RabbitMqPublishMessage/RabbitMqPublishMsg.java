@@ -10,6 +10,9 @@ import org.apache.camel.impl.DefaultCamelContext;
 
 import java.nio.charset.StandardCharsets;
 
+/**
+ * @author shem.mwangi
+ */
 public class RabbitMqPublishMsg {
     public static void main(String[] args) throws Exception {
         CamelContext context = new DefaultCamelContext();
