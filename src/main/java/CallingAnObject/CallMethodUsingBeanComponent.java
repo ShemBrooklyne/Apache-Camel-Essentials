@@ -12,16 +12,17 @@ import org.apache.camel.support.SimpleRegistry;
 public class CallMethodUsingBeanComponent {
 
     public static void main(String[] args) throws Exception {
-        Service service = new Service();
-        SimpleRegistry registry = new SimpleRegistry();
-        //registry.put("service", service);
 
-        CamelContext context = new DefaultCamelContext(registry);
+        Service service = new Service();
+
+        CamelContext context = new DefaultCamelContext();
+        context.getRegistry().bind("myService", service);
+
         context.addRoutes(new RouteBuilder() {
             @Override
             public void configure() throws Exception {
                 from("direct:start")
-                        .to("bean:service?method=doSomething");
+                        .to("bean:myService?method=doSomething");
             }
         });
         context.start();
