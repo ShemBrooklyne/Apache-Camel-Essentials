@@ -14,7 +14,7 @@ public class CallMethodUsingBeanComponent {
     public static void main(String[] args) throws Exception {
         Service service = new Service();
         SimpleRegistry registry = new SimpleRegistry();
-        registry.put("service", service);
+        //registry.put("service", service);
 
         CamelContext context = new DefaultCamelContext(registry);
         context.addRoutes(new RouteBuilder() {
