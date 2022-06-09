@@ -19,7 +19,7 @@ public class SqlOperation {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setUrl("jdbc:mysql://localhost:3306/apache_camel");
         dataSource.setUser("root");
-        dataSource.setPassword("m3tr0crus@d3r");
+        dataSource.setPassword("${password}");
 
         CamelContext context = new DefaultCamelContext();
 
