@@ -1,5 +1,6 @@
 #ignore files when tracking
 ./idea
+.vscode
 input_box
 output_box
 target
