@@ -14,7 +14,7 @@ public class FileCopy {
                         .to("file:output_box");
                     }
                 });
-                //inifinite loop so that it be continuous
+                //infinite loop so that it be continuous
                 while(true)
                     camelContext.start();
             } catch (Exception e) {

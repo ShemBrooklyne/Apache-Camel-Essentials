@@ -14,6 +14,11 @@
             <artifactId>camel-core</artifactId>
             <version>3.16.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-rabbitmq</artifactId>
+            <version>3.17.0</version>
+        </dependency>
     </dependencies>
 
     <properties>

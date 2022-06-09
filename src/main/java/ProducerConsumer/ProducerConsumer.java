@@ -20,6 +20,7 @@ public class ProducerConsumer {
                                     message = message + "- By Shem B. Mwangi";
 
                                     exchange.getOut().setBody(message);
+
                                 }
                             })
                             .to("seda:end");
